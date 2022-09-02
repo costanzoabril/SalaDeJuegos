@@ -5,6 +5,30 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'SalaDeJuegos';
+  title = 'salaJuegos';
+
+  constructor(){
+
+  }
+
+  edadUno:number=0;
+    edadDos:number=0;
+    resultadoPromedio:number=0;
+    resultadoSuma:number=0;
+  
+    calcular(){
+        this.sumar();
+        this.sacarPromedio();
+    }
+    sumar(){
+      this.resultadoSuma = this.edadUno + this.edadDos;
+    }
+  
+    sacarPromedio(){
+      this.resultadoPromedio = (this.edadUno + this.edadDos) / 2;
+    }
 }
+
+
