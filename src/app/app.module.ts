@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { BienvenidoComponent } from './Vistas/bienvenido/bienvenido.component';
 import { LoginComponent } from './Vistas/login/login.component';
 import { ErrorComponent } from './Vistas/error/error.component';
+import { QuienSoyComponent } from './Vistas/quien-soy/quien-soy.component';
+import { JuegoComponent } from './Vistas/juego/juego.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidoComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    QuienSoyComponent,
+    JuegoComponent,
   ],
   imports: [
     BrowserModule,

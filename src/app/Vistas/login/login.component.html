@@ -1,1 +1,22 @@
-<p>login works!</p>
+<body>
+    <header>
+        <h1>Sala de Juegos Login</h1>
+    </header>
+    <main>
+        <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <div class="form_div">
+                <label>Usuario:</label>
+                <input class="field_class" name="login_txt" type="text" autofocus>
+                <label>Contraseña:</label>
+                <input id="pass" class="field_class" name="password_txt" type="password">
+                <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">Entrar</button>
+            </div>
+            <div class="info_div">
+                <p>¿Aún no está registrado? <a href="register/reg-form.php">Registrese!</a></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Página de <a href="#">Abril Costanzo</a></p>
+    </footer>
+</body>
