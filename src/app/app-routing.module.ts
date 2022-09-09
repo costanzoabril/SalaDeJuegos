@@ -8,6 +8,7 @@ import { QuienSoyComponent } from './Vistas/quien-soy/quien-soy.component';
 
 const routes: Routes = [
   {path:'', component: BienvenidoComponent},
+  {path:'bienvenido', component: BienvenidoComponent},
   {path:'quien-soy', component: QuienSoyComponent},
   {path:'juego', component: JuegoComponent},
   {path:'login', component: LoginComponent},
