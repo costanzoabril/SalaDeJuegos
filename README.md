@@ -1,2 +1,2 @@
 # SalaDeJuegos
-labiv2022.firebaseapp.com
+https://labiv2022.web.app/
