@@ -1,0 +1,30 @@
+<body>
+    <header>
+        <h1>Sala de Juegos <br> Registro</h1>
+    </header>
+    <main>
+        <form (ngSubmit)="registrar()" [formGroup]="registrarUsuario" id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <div class="form_div">
+                <div>
+                    <label>Email:</label>
+                    <input class="field_class" formControlName="email" name="login_txt" type="text" autofocus>
+                </div>
+                <div>
+                    <label>Contraseña:</label>
+                    <input id="pass" class="field_class" formControlName="password" name="password_txt" type="password">
+                </div>
+                <div>
+                    <label>Repetir contraseña:</label>
+                    <input id="pass" class="field_class" formControlName="repetirPassword" name="repetirpassword_txt" type="password">
+                </div>
+                <button class="submit_class" type="submit" >Registrarse</button>
+            </div>
+            <div class="info_div">
+                <p>¿Ya estás registrado? <a routerLink="/login">Ingrese!</a></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Página de <a href="#">Abril Costanzo</a></p>
+    </footer>
+</body>

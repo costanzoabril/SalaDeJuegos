@@ -1,18 +1,19 @@
 <body>
     <header>
-        <h1>Sala de Juegos Login</h1>
+        <h1>Sala de Juegos <br> Login</h1>
     </header>
     <main>
-        <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+        <form (ngSubmit)="login()" [formGroup]="loginUsuario" id="login_form" class="form_class" action="login/login-access.php" method="post">
             <div class="form_div">
-                <label>Usuario:</label>
-                <input class="field_class" name="login_txt" type="text" autofocus>
+                <label>Email:</label>
+                <input formControlName="email" class="field_class" name="login_txt" type="text" autofocus value={{this.loginUsuario.value.email}}>
                 <label>Contraseña:</label>
-                <input id="pass" class="field_class" name="password_txt" type="password">
-                <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">Entrar</button>
+                <input formControlName="password" id="pass" class="field_class" name="password_txt" type="password" value={{this.loginUsuario.value.password}}>
+                <button class="submit_class" type="submit" form="login_form" >Entrar</button>
+                <input type="button" class="submit_class" value="Iniciar sesión rapido" (click)='this.loginRapido()'/>
             </div>
             <div class="info_div">
-                <p>¿Aún no está registrado? <a href="register/reg-form.php">Registrese!</a></p>
+                <p>¿Aún no está registrado? <a routerLink="/registro">Registrese!</a></p>
             </div>
         </form>
     </main>

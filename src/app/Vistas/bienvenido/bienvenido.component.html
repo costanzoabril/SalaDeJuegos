@@ -11,9 +11,13 @@
           <li><a routerLink="/quien-soy" class="nav-link px-2 text-white">Quien soy</a></li>
         </ul>
 
-        <div class="text-end">
+        <div *ngIf="!logueado" class="text-end">
           <button routerLink="/login" type="button" class="btn btn-outline-light me-2">Iniciar sesión</button>
-          <button type="button" class="btn btn-warning">Registrarse</button>
+          <button type="button" class="btn btn-warning" routerLink="/registro">Registrarse</button>
+        </div>
+        <div *ngIf="logueado">
+          <label [(ngModel)]="emailShowed" name="emailShowed" class="px-2" >{{emailShowed}}</label>
+          <button type="button" class="btn btn-outline-light me-2" (click)="logOut()">Cerrar sesión</button>
         </div>
       </div>
     </div>

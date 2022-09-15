@@ -5,6 +5,7 @@ import { ErrorComponent } from './Vistas/error/error.component';
 import { JuegoComponent } from './Vistas/juego/juego.component';
 import { LoginComponent } from './Vistas/login/login.component';
 import { QuienSoyComponent } from './Vistas/quien-soy/quien-soy.component';
+import { RegistroComponent } from './Vistas/registro/registro.component';
 
 const routes: Routes = [
   {path:'', component: BienvenidoComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'quien-soy', component: QuienSoyComponent},
   {path:'juego', component: JuegoComponent},
   {path:'login', component: LoginComponent},
+  {path:'registro', component: RegistroComponent},
   {path:'**', component: ErrorComponent}
 ];
 

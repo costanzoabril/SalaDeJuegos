@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppComponent{
+
   title = 'salaJuegos';
 
   constructor(){
-
+    
   }
 
-  edadUno:number=0;
-    edadDos:number=0;
+    /*edadDos:number=0;
     resultadoPromedio:number=0;
     resultadoSuma:number=0;
   
@@ -28,7 +28,7 @@ export class AppComponent{
   
     sacarPromedio(){
       this.resultadoPromedio = (this.edadUno + this.edadDos) / 2;
-    }
+    } */
 }
 
 
